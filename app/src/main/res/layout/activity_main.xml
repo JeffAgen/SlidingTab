@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="45.5dp"
+		android:background="#F0F0F0"
+		android:fadingEdge="none"
+		android:overScrollMode="never"
+		/>
+
+	<View
+		android:id="@+id/line"
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_above="@+id/tab_bar"
+		android:background="#cccccc"
+		/>
+
+	<org.xhz.slidingtab.PagerTitleBar
+		android:id="@+id/tab_bar"
+		style="@style/pager_title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentBottom="true"
+		/>
+
+</RelativeLayout>
+
